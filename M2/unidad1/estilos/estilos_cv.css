@@ -1,0 +1,29 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background: -moz-radial-gradient(center, ellipse cover, rgba(216,224,222,1) 0%, rgba(174,191,188,1) 22%, rgba(153,175,171,1) 33%, rgba(142,166,162,1) 50%, rgba(130,157,152,1) 67%, rgba(78,92,90,1) 82%, rgba(14,14,14,1) 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 22%,rgba(153,175,171,1) 33%,rgba(142,166,162,1) 50%,rgba(130,157,152,1) 67%,rgba(78,92,90,1) 82%,rgba(14,14,14,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(216,224,222,1) 0%,rgba(174,191,188,1) 22%,rgba(153,175,171,1) 33%,rgba(142,166,162,1) 50%,rgba(130,157,152,1) 67%,rgba(78,92,90,1) 82%,rgba(14,14,14,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    color: blue;
+}
+
+img {
+    border-style: ridge;
+    border-radius: 10px;
+}
+
+ul {
+    margin-left: 40%;
+    text-align: left;
+    list-style-type: square;
+}

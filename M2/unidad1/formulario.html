@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Selpaz</title>
+    <link rel="stylesheet" href="estilos/estilos_cv.css" type="text/CSS">
+    <link rel="stylesheet" href="estilos/estilos_form.css" type="text/CSS">
+</head>
+<body>
+    <a href="index.html"><p>Regresar<p></a>
+    <form action="#" method="post">
+        <h1>Formulario de contacto</h1>
+        <h3>Los campos con un asterisco (*) son obligatorios.</h3>
+        <p>
+            <label for="nombre">Nombre*</label><br/>
+            <input type="text" name="nombre" id="nombre" required="true">
+        </p>
+        <p>
+            <label for="apellido">Apellido*</label><br/>
+            <input type="text" name="apellido" id="apellido" required="true">
+        </p>
+        <p>
+            <label for="email">E-mail*</label><br/>
+            <input type="email" name="email" id="email" required="true">
+        </p>
+        <label for="empresa">Empresa</label><br/>
+        <input type="text" name="empresa" id="empresa">
+        <p>
+            <label for="asunto">Asunto</label><br/>
+            <input type="text" name="asunto" id="asunto">
+        </p>
+        <p>
+            <label for="mensaje">Mensaje*</label><br/>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="3" required="true"></textarea>
+        </p>
+         <p>
+        <input type="submit" value="Enviar">
+         </p>
+    </form>
+</body>
+</html>
