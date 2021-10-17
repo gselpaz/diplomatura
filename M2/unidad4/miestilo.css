@@ -1,0 +1,47 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.logo {
+
+    width: 200px;
+}
+
+.img-fluid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col img {
+    height: 500px;
+}
+
+.container .row {
+    margin: 30px;
+    border-style: groove;
+}
+
+
+footer {
+    height: 160px;
+    padding: 30px;
+    background-color: gray;
+    color: white;
+}
+
+.texto_footer {
+    width: 40%;
+    height: 100px;
+    float: left;
+}
+
+.logo_2 {
+    width: 20%;
+    height: 100px;
+    text-align: center;
+    float: left;
+}
