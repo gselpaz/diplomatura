@@ -1,0 +1,139 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: rgb(98, 98, 255);
+    padding: 15px;
+}
+
+header h1 {
+    color: white;
+    position: relative;
+    left: 30px;
+}
+
+h1 {
+    color: midnightblue;
+    display: inline-block;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+}
+
+h2 {
+    color: midnightblue;
+    font-style: italic;
+    font-size: 22px;
+}
+
+nav {
+    background-color: slategray;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 20%;
+}
+
+nav ul li a {
+   text-decoration: none;
+   display: block; 
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+nav ul li a.activo {
+    background-color: darkgray;
+ }
+
+nav ul li a:hover {
+    background-color: darkgray;
+}
+
+.holder {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.holder2 {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.izquierda , .derecha {
+    box-sizing: border-box;
+}
+
+.izquierda {
+    width: 40%;
+    float: left;
+}
+
+.derecha {
+    width: 60%;
+    float: right;
+}
+
+.testimonio {
+    background-color:palegoldenrod;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    clear: both;
+    background-color: darkgray;
+    height: 100px;
+    margin: 30px 0px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 30px;
+}
+
+.persona {
+    float: left;
+    width: 25%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.persona h5, .persona h6 {
+    text-align: center;
+    font-weight: bold;
+    color:midnightblue;
+    margin: 5px;
+}
+
+.persona img {
+    border-radius: 50%;
+}
+
+.persona h5 {
+    font-size: 16px;
+}
+
+.persona h6 {
+    font-size: 12px;
+    font-style: italic;
+}
