@@ -1,0 +1,271 @@
+/* font-family: 'Open Sans', sans-serif; */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: rgb(98, 98, 255);
+    padding: 15px;
+}
+
+header h1 {
+    color: white;
+    position: relative;
+    left: 30px;
+}
+
+h1 {
+    color: midnightblue;
+    display: inline-block;
+    font-size: 26px;
+    font-style: italic;
+    font-weight: bold;
+    position: relative;
+}
+
+h2 {
+    color: midnightblue;
+    font-style: italic;
+    font-size: 22px;
+}
+
+h6 {
+    display: inline-block;
+    color: white;
+    vertical-align: bottom;
+    font-style: italic;
+}
+
+nav {
+    background-color: slategray;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 20%;
+}
+
+nav ul li a {
+   text-decoration: none;
+   display: block; 
+   color: white;
+   text-align: center;
+   padding: 5px;
+}
+
+nav ul li a.activo {
+    background-color: darkgray;
+ }
+
+nav ul li a:hover {
+    background-color: darkgray;
+}
+
+.img-fluid {
+    object-fit: contain;
+}
+
+.holder {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.holder2 {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.izquierda , .derecha {
+    box-sizing: border-box;
+}
+
+.izquierda {
+    width: 40%;
+    float: left;
+}
+
+.derecha {
+    width: 60%;
+    float: right;
+}
+
+.testimonio {
+    background-color:palegoldenrod;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+footer {
+    clear: both;
+    background-color: darkgray;
+    height: 100px;
+    margin: 30px 0px;
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+main {
+    padding: 30px;
+}
+
+.persona {
+    float: left;
+    width: 25%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.persona h5, .persona h6 {
+    text-align: center;
+    font-weight: bold;
+    color:midnightblue;
+    margin: 5px;
+}
+
+.persona img {
+    border-radius: 50%;
+}
+
+.persona h5 {
+    font-size: 16px;
+}
+
+.persona h6 {
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+
+/* proyectos inicio */
+
+.galeria {
+    background-color:lightgray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.foto {
+    margin: 10px;
+}
+
+.proyecto_img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.proyecto_img:hover {
+    filter:brightness(100%);
+}
+
+.galeria .foto:nth-child(4n+1) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+.galeria .foto:nth-child(4n+2) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: red;
+}
+
+.galeria .foto:nth-child(4n+3) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+.galeria .foto:nth-child(4n+4) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: red;
+}
+
+/* proyectos fin */
+
+
+/* contacto inicio */
+
+.columna {
+
+}
+
+.columna.left {
+
+    /* background-color: red; */
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.columna.right {
+    display: inline-block;
+    margin: 0;
+    padding: 50px;
+    /* background-color: aquamarine; */
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.formulario label {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+}
+
+.formulario input , .formulario textarea {
+    background-color:silver;
+    width: 80%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 80px;
+}
+
+iframe {
+    display: block;
+    clear: both;
+    width: 900px;
+
+}
+
+
+
+/* contacto fin */
+
