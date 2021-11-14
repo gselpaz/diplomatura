@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_cuadrados.css">
+    <title>Javascript 2</title>
+</head>
+
+<body>
+
+<div>
+
+    <h1>Ejercicio 1</h1>
+    <div id="cuadrado-1"></div>
+    <div id="cuadrado-2"></div>
+    <div id="cuadrado-3"></div>
+
+<!-- Ejercicio 1 -->
+
+
+    <script>
+        var cuadrado = [document.getElementById('cuadrado-1'), document.getElementById('cuadrado-2'), document.getElementById('cuadrado-3')]
+
+        cuadrado[0].addEventListener('click', function() {
+            cuadrado[0].style.backgroundColor = "yellow";
+        });
+
+        cuadrado[1].addEventListener('click', function() {
+            cuadrado[1].style.backgroundColor = "yellow";
+        });
+
+        cuadrado[2].addEventListener('click', function() {
+            cuadrado[2].style.backgroundColor = "yellow";
+        });
+
+    </script>
+</div>
+
+
+<!-- Ejercicio 2 -->
+
+<div>
+
+    <h1>Ejercicio 2</h1>
+    <textarea name="contador" id="contador" cols="30" rows="10" onpaste="contador();" onkeyup="contador();"> </textarea>
+
+    <div id="resultado"></div>
+
+    <script>
+        function contador() 
+        {
+            var total = 30;
+
+            setTimeout(function(){
+                var texto = document.getElementById('contador');
+                var respuesta = document.getElementById('resultado');
+                var cantidad = texto.value.length;
+                document.getElementById('resultado').innerHTML = cantidad + " caracteres"
+            })
+
+        }
+
+
+
+    </script>
+
+</div>
+
+
+
+<!-- Ejercicio 3 -->
+
+<div>
+
+    <h1>Ejercicio 3</h1>
+    <script>
+        var alumnos = [{nombre: 'Juan Gomez',nota: 7}, {nombre: 'Pedro Rodriguez',nota: 4}, {nombre: 'Roxana García',nota: 8}, {nombre: 'Luciano Lopez',nota: 5}, {nombre: 'Fernanda Gimenez',nota: 6}, {nombre: 'Florencia Martinez',nota: 10}, {nombre: 'Raul Sanchez',nota: 7}, {nombre: 'Sandra Figueroa',nota: 8}];
+
+
+        var aprobados = alumnos.filter( alumnos =>  alumnos.nota >= 7 );
+		
+        document.write("Los alumnos aprobados son: ");
+
+// Para mostrar los nombres en pantalla
+
+		for (i=0; i < aprobados.length; i++) {
+			document.write(aprobados[i].nombre + "; ");
+		}
+    
+        // console.log(aprobados);
+
+    </script>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>
