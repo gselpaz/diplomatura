@@ -1,0 +1,65 @@
+/* proyectos inicio */
+
+.galeria {
+    background-color:lightgray;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1em 0 1em 2.5%;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.foto {
+    margin: 10px;
+    width: inherit;
+    height: 300px;
+}
+
+.proyecto_img {
+    width: 400px;
+    height: 300px;
+    object-fit:contain;
+    filter: brightness(90%);
+    background-color: black;
+}
+
+.proyecto_img:hover {
+    filter:brightness(100%);
+}
+
+.galeria .foto:nth-child(4n+1) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+.galeria .foto:nth-child(4n+2) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: red;
+}
+
+.galeria .foto:nth-child(4n+3) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: blue;
+}
+
+.galeria .foto:nth-child(4n+4) {
+    overflow: hidden;
+    border-style: dotted;
+    border-width: thin;
+    border-radius: 10px;
+    border-color: red;
+}
+
+/* proyectos fin */

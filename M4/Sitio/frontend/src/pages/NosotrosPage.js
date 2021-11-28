@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../src/styles/components/pages/NosotrosPage.css'
 
 const NosotrosPage = (props) => {
     return (

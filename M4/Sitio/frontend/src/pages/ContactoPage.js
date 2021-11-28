@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../src/styles/components/pages/ContactoPage.css'
 
 const ContactoPage = (props) => {
     return (
@@ -37,9 +38,9 @@ const ContactoPage = (props) => {
                 </ul>
         </div>
 
-        {/* <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.9742106497047!2d-58.27146328423177!3d-34.806590675768575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329662a27d839%3A0x9f376ef65948e570!2sSan%20Juan%20548%2C%20B1888IML%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1635710897350!5m2!1sen!2sar" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div> */}
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.9742106497047!2d-58.27146328423177!3d-34.806590675768575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a329662a27d839%3A0x9f376ef65948e570!2sSan%20Juan%20548%2C%20B1888IML%20Florencio%20Varela%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1635710897350!5m2!1sen!2sar"></iframe>
+        </div>
 
 
 

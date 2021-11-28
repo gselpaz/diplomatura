@@ -1,0 +1,28 @@
+.img-fluid {
+    object-fit: contain;
+}
+
+
+.izquierda , .derecha {
+    box-sizing: border-box;
+}
+
+.izquierda {
+    width: 40%;
+    float: left;
+}
+
+.derecha {
+    width: 60%;
+    float: right;
+}
+
+.testimonio {
+    background-color:palegoldenrod;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+h6 {
+    margin: 10px;
+}

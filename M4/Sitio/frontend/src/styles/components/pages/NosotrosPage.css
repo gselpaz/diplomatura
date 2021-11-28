@@ -1,0 +1,28 @@
+.persona {
+    float: left;
+    width: 25%;
+    height: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.persona h5, .persona h6 {
+    text-align: center;
+    font-weight: bold;
+    color:midnightblue;
+    margin: 5px;
+}
+
+.persona img {
+    border-radius: 50%;
+}
+
+.persona h5 {
+    font-size: 16px;
+}
+
+.persona h6 {
+    font-size: 12px;
+    font-style: italic;
+}

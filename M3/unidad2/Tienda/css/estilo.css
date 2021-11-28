@@ -217,9 +217,6 @@ main {
 
 /* contacto inicio */
 
-.columna {
-
-}
 
 .columna.left {
 
@@ -234,7 +231,6 @@ main {
     margin: 0;
     padding: 50px;
     /* background-color: aquamarine; */
-    float: right;
     width: 50%;
     box-sizing: border-box;
 }
