@@ -4,12 +4,16 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+var pool = require('./models/bd');
+
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 // la dirección que se requiere para acceder al contenido de index.js
 var loginRouter = require('./routes/admin/login')
 
-var session = require('express-session')
+var session = require('express-session');
+const res = require('express/lib/response');
 
 var app = express();
 
@@ -23,6 +27,43 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//select
+pool.query("select * from empleados").then(function(resultados){
+  console.log(resultados);
+});
+
+//insert
+// var obj = {
+//   nombre:'Juan',
+//   apellido:'Lopez',
+//   trabajo: 'docente',
+//   edad:38,
+//   salario: 1500,
+//   mail: 'juanlopez@gmail.com'
+// }
+
+// pool.query('insert into empleados set ?', [obj]).then(function (resultados){
+//   console.log(resultados);
+// });
+
+// //update
+// var id = 1;
+// var obj = {
+//   nombre: 'Pablo',
+//   apellido: 'Gomez',
+// }
+
+// pool.query('update empleados set ? where id_emp =?', [obj, id]).then(function(resultados){
+//   console.log(resultados);
+// });
+
+//delete
+var id = 24;
+pool.query('delete from empleados where id_emp=?', [id]).then(function(resultados){
+  console.log(resultados);
+});
+
+// Sesiones
 
 app.use(session({
   secret: 'asdasdasdasd',
@@ -40,7 +81,6 @@ app.get('/sesiones', function (req, res) {
   });
 });
 
-// Sesiones
 
 app.post('/ingresar', function (req, res) {
   if (req.body.nombre) {
@@ -60,6 +100,13 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 // cuando utilicemos la ruta /admin/login vamos a utilizar loginRouter
 app.use('/admin/login', loginRouter)
+
+
+//select
+pool.query('select * from empleados').then(function(resultados){
+  console.log(resultados)
+});
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
