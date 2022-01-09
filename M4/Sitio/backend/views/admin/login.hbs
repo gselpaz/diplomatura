@@ -1,1 +1,30 @@
-<h2>proximamente administrador</h2>
+<div class="container" style="margin-top:100px;">
+    <div class="row">
+        <h2>Administrador</h2>
+
+        <form action="/admin/login" method="post">
+            <div class="mb-3">
+                {{!-- <label for="exampleFormControlInput1" class="form-label"></label> --}}
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="user" placeholder="Usuario" name="usuario">
+                </div>  
+            </div>
+            <div class="mb-3">
+                <div class="col-sm-10">
+                    {{!-- <label for="exampleFormControlInput1" class="form-label"></label> --}}
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña" name="password">
+                </div>
+            </div>
+            {{!-- <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div> --}}
+            <button type="submit" class="btn btn-primary" placeholder="Ingresar">Ingresar</button>
+        </form>
+
+        {{#if error}}
+            <p>Usuario o contraseña incorrecta.</p>
+        {{/if}}
+
+    </div>
+</div>
