@@ -7,4 +7,45 @@
             </a>
         </p>
     </div>
+    {{!-- fila 2 --}}
+    <div>
+        <div class="row">
+            <div class="col-7">
+                <h2>Listado de Novedades</h2>
+            </div>
+            <div class="col-5 text-end">
+                <a class="btn btn-success" href="/admin/novedades/agregar">
+                    <i class="fa fa-plus" aria-hidden="true"></i> Nuevo
+                </a>
+            </div>
+        </div>
+        <br/>
+    </div>
+        {{!-- fila 3 --}}
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <thead>
+                    <tr class="table-dark">
+                        <th scope="col">#</th>
+                        <th scope="col">titulo</th>
+                        <th class="text-end">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each novedades}}
+                    <tr>
+                        <th scope="row">{{id}}</th>
+                        <td>{{titulo}} </td>
+                        <td class="text-end">
+                            <a class="btn btn-secondary" href=""><i class="fas fa-pencil-alt"></i></a>
+                            <a class="btn btn-secondary" href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        </td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+
+    </div>
 </div>
