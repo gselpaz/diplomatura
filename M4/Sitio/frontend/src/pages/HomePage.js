@@ -8,13 +8,16 @@ const HomePage = (props) => {
             <div className="holder2">
                 <div className="izquierda">
                   <h1>Bienvenidos</h1>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quasi maxime, et ex voluptate, ipsam cupiditate dolorem nostrum quia sapiente cum inventore illum laboriosam dolore odio odit consequatur tenetur optio!</p>
+                  <p>Somos un grupo de amigos que se reunieron con la intención de llevar adelante ciertas iniciativas relacionadas con Ingenieria, entre las cuáles se encuentran algunas relacionadas con Impresión 3D, Minería de Cryptomonedas, Desarrollo WEB, entre otros.</p>
                 </div>
                 <div className="derecha">
-                      <h1>Testimonios</h1>
                     <div className="testimonio">
-                    <h2>Simplemente excelente</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique quasi maxime, et ex voluptate, ipsam cupiditate dolorem nostrum quia sapiente cum inventore illum laboriosam dolore odio odit consequatur tenetur optio!</p>
+                    <h1>Por qué elegirnos</h1>
+                    <ul>
+                        <li><h4>Nuestra prioridad son clientes satisfechos.</h4></li>
+                        <li><h4>Gran compromiso con los plazos de entrega.</h4></li>
+                        <li><h4>Productos de primedad calidad, y una continua mejora.</h4></li>
+                    </ul>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 nav {
-    background-color: slategray;
+    background-color:darkslateblue;
 }
 
 nav ul {
@@ -22,9 +22,11 @@ nav ul li a {
 }
 
 nav ul li a.activo {
-    background-color: darkgray;
+    background-color: indigo;
+
  }
 
 nav ul li a:hover {
-    background-color: darkgray;
+    background-color: indigo;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
 }

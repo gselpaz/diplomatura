@@ -1,5 +1,9 @@
 /* contacto inicio */
 
+body {
+    background-image: url(../../../wallpaper.jpg);
+    background-size:contain;
+}
 
 .columna.left {
 
